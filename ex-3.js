@@ -32,4 +32,13 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+function resultJohnProfile(resolve) {
+  console.log(resolve);
+}
+function resultJohnOrder(resolve) {
+  console.log(resolve);
+}
+getJohnProfile()
+  .then(resultJohnProfile)
+  .then(getJohnOrders)
+  .then(resultJohnOrder);
