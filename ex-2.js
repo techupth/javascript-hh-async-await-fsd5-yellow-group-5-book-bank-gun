@@ -12,4 +12,8 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+function result(reject) {
+  console.log(reject);
+}
+
+getJohnProfile().catch(result);
